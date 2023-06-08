@@ -1,0 +1,83 @@
+.columns2 {
+    height: 30px !important;
+    padding: 5px !important;
+    min-width: 80px;
+}
+.agenda_field2 {
+    background: white !important;
+    height: 120px !important;
+    top: 120px !important;
+    position: relative !important;
+}
+.agenda_field_two_hours2 {
+    background: white !important;
+    height: 115px !important;
+    top: 0px !important;
+    position: relative !important;
+    min-width: 60px !important;
+}
+.agenda_field_two_hours3 {
+    background: white !important;
+    height: 115px !important;
+    top: 120px !important;
+    position: absolute !important;
+}
+.bg-custom-1 {
+    background: #E9EAEB !important;
+}
+.border-custom-1 {
+    border-color: #c3cace !important;
+}
+.text-black {
+    color: black !important;
+}
+.text-light-custom {
+    color: #E9EAEB !important;
+}
+.text-overflow {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    margin-bottom: 2.5px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc((100vw / 7) - (5.05px / 8) - 40px);
+    min-width: 55px !important;
+    height: 24px;
+    white-space: nowrap;
+}
+.text-overflow-2 {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+    margin-bottom: 2.5px !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc((100vw / 7) - (5.05px / 8) - 40px);
+    min-width: 55px !important;
+    white-space: nowrap;
+    height: auto !important;
+}
+.curser-pointer {
+    cursor: pointer !important;
+}
+.text-green-custom {
+    color: #00d61d !important;
+}
+.position {
+    /*position: absolute; !important;*/
+}
+.agenda_field_time {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+@media only screen and (max-width: 425px) {
+    .responsive-row {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .container-table {
+        overflow: scroll !important;
+    }
+}
