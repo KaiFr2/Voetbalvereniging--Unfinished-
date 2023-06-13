@@ -7,5 +7,5 @@ function showModal(title, location, description) {
     document.getElementById('modalBodyOne').innerText = description;
     document.getElementById('modalBodyTwo').innerText = "Locatie: " + location;
 
-    console.log(title, location, description);
+    console.log(title,description,location);
 }
