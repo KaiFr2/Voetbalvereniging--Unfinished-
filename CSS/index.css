@@ -91,6 +91,11 @@
     bottom: 0;
     right: 5px;
 }
+.agenda_field_time_2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
 @media only screen and (max-width: 426px) {
     .responsive-row {
         display: flex !important;
