@@ -24,9 +24,10 @@ echo '<!doctype html>
   </a>
 
   <ul class="nav nav-pills">
-  <li class="nav-item me-2"><a href="#" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Home</a></li>
-  <li class="nav-item me-2"><a href="#" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Login</a></li>
-  <li class="nav-item me-2"><a href="#" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Registeren</a></li>
+  <li class="nav-item me-2"><a href="index.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Home</a></li>
+  <li class="nav-item me-2"><a href="login.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Login</a></li>
+  <li class="nav-item me-2"><a href="register.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Registeren</a></li>
+    <li class="nav-item me-2"><a href="overons.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Over ons</a></li>
 </ul>
 
 </header>';
