@@ -229,11 +229,7 @@ $top = $scale * $minutes;
                                 if ($record['dag_nummer'] == 1) {
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 agenda_field_monday rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="showModal(\'test\',\'test\',\'test\')">
-=======
                                     echo '<div class="agenda_field_two_hours2 agenda_field_monday rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                         <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
                                         <p class="m-0 agenda_field_time">' . $record['begin_uur'] . ':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
@@ -305,15 +301,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours agenda_field_tuesday rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours agenda_field_tuesday rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
@@ -381,15 +371,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
@@ -459,15 +443,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . ((($beginUur - $beginHours) * 30) * 4) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . ((($beginUur - $beginHours) * 30) * 4) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
@@ -537,15 +515,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
@@ -613,15 +585,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModl(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>a
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
@@ -689,15 +655,9 @@ $top = $scale * $minutes;
                                     $eindUur = $record['eind_uur'] + ($record['eind_minuut'] / 60);
                                     $beginUur = $record['begin_uur'] + ($record['begin_minuut'] / 60);
 
-<<<<<<< HEAD
-                                    echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\'test\',\'test\',\'test\')">
-                                            <p class="m-0 text-overflow text-black" style="display: flex; justify-content: flex-start">' . $record['titel'] . '</p>
-                                            <p class="m-0 text-overflow-2" style="display: flex; justify-content: flex-start">Locatie: ' . $record['locatie'] . '</p>
-=======
                                     echo '<div class="agenda_field_two_hours2 rounded border-custom-gold border-start border-5 curser-pointer" style="height: ' . (((($eindUur - $beginUur) * 4) * 30) - 5) . 'px; top: ' . (((($beginUur - $beginHours) * 30) * 4)) . 'px;" data-bs-toggle="modal" data-bs-target="#exampleModal"  onclick="showModal(\''. $record['titel'] .'\',\''. $record['locatie'] .'\',\''. $record['beschrijving'] .'\')">
                                             <p class="m-0 text-overflow-2 text-black" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">' . $record['titel'] . '</p>
                                         <p class="m-0 text-overflow-2" style="text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Locatie: ' . $record['locatie'] . '</p>
->>>>>>> 0c9260b69b1b73413371bf32113bf31bd31fc2f6
                                             <p class="m-0 agenda_field_time">' . $record['begin_uur'] .':' . $begin_minuut . ' - ' . $record['eind_uur'] . ':' . $eind_minuut . '</p>
                                         </div>';
                                 }
