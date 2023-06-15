@@ -1,5 +1,7 @@
 <?php
-echo '<!doctype html>
+session_start();
+?>
+<!doctype html>
 <html lang="nl">
 <head>
   <meta charset="utf-8">
@@ -17,18 +19,35 @@ echo '<!doctype html>
   <link rel="stylesheet" href="../CSS/index.css">
   <script src="../Javascript/index.js"></script>
   
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom border-custom-gold">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-    <img src="../Images/3068540.png" alt="Logo" width="40" height="32" class="me-2">
+    <img src="../Images/3068527.png" alt="Logo" width="40" height="32" class="me-2">
     <span class="text-white fs-4">Voetbal Vereniging</span>
   </a>
 
   <ul class="nav nav-pills">
   <li class="nav-item me-2"><a href="index.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Home</a></li>
-  <li class="nav-item me-2"><a href="login.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Login</a></li>
-  <li class="nav-item me-2"><a href="register.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Registeren</a></li>
+  <?php
+  if (isset($_SESSION['session_id'])) {
+    echo '<li class="nav-item me-2"><a href="agenda.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Agenda</a></li>';
+    echo '<li class="nav-item me-2"><a href="taken.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Taken</a></li>';
+  }
+  else {
+    echo '<li class="nav-item me-2"><a href="login.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Login</a></li>';
+    echo '<li class="nav-item me-2"><a href="register.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Registeren</a></li>';
+  }
+  if (isset($_SESSION['admin']) && $_SESSION['admin'] == 1) {
+    echo '<li class="nav-item me-2"><a href="admin.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Vrijwilligers</a></li>';
+    echo '<li class="nav-item me-2"><a href="goedkeuren-taken.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Taken Goedkeuren</a></li>';
+  }
+
+  ?>
     <li class="nav-item me-2"><a href="overons.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Over ons</a></li>
+    <?php
+    if (isset($_SESSION['session_id'])) {
+      echo '<li class="nav-item me-2"><a href="uitlog.php" class="nav-link active" aria-current="page" style="background-color: #D4AF37;">Uitlog</a></li>';
+    }
+    ?>
 </ul>
 
-</header>';
-?>
+</header>
