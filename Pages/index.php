@@ -1,5 +1,5 @@
 <?php
-include '../Particals/header.php';
+include '../Particals/headerHome.php';
 ?>
 
 <!doctype html>

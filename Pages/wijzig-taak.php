@@ -65,7 +65,7 @@ if (isset($_POST['wijzig-taken'])) {
 }
 ?>
 
-<form name="submit-taken" method="POST">
+<form name="submit-taken" method="POST" class="m-3">
   <div class="form-group">
   <label for="exampleFormControlInput1">Titel van taak</label>
     <input type="text" class="form-control" value="<?php echo $taakTitel; ?>" name="titel" id="titel">

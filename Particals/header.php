@@ -22,7 +22,7 @@ session_start();
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom border-custom-gold">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
     <img src="../Images/3068527.png" alt="Logo" width="40" height="32" class="me-2">
-    <span class="text-white fs-4">Voetbal Vereniging</span>
+    <span class="text-black fs-4">Voetbal Vereniging</span>
   </a>
 
   <ul class="nav nav-pills">

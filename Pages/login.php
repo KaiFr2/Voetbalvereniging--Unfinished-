@@ -39,17 +39,27 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
 </head>
-
+<style>
+    body {
+        background-image: url("../Images/background-site.jpg");
+        background-size: cover;
+    }
+</style>
 <body>
-    <div class="post">
-        <form action="" method="POST">
-            <input type="text" name="naam" placeholder="naam">
-            <br>
-            <input type="text" name="wachtwoord" placeholder="wachtwoord">
-            <br>
-            <input type="submit" name="submit">
-        </form>
-    </div>
+    <form action="" method="POST" class="m-3 bg-custom-1 p-3">
+        <h3>Inlog formulier</h3>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Naam</label>
+            <input type="text" name="naam" class="form-control">
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleFormControlInput1">Wachtwoord</label>
+            <input type="password" name="wachtwoord" class="form-control">
+        </div>
+        <div style="justify-content: center; display: flex">
+            <input type="submit" name="submit" class="btn btn-primary mt-3 w-100">
+        </div>
+    </form>
 </body>
 
 </html>

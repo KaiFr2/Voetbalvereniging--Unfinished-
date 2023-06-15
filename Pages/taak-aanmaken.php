@@ -44,7 +44,7 @@ if (isset($_POST['submit-taken'])) {
 
 ?>
 
-<form name="submit-taken" action="taak-aanmaken.php" method="POST">
+<form name="submit-taken" action="taak-aanmaken.php" method="POST" class="m-3">
   <div class="form-group">
     <label for="exampleFormControlInput1">Titel van taak</label>
     <input type="text" class="form-control" name="titel" id="titel">
@@ -52,31 +52,33 @@ if (isset($_POST['submit-taken'])) {
   <div class="form-group">
     <label for="exampleFormControlInput1">Locatie van taak</label>
     <input type="text" class="form-control" name="locatie">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Begin uur</label>
-    <select class="form-control" name="start-hour">
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Begin minuut</label>
-    <select class="form-control" name="start-minutes">
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-    </select>
+  </div
+    <label>Begin tijd</label>
+  <div class="d-flex">
+      <div class="w-auto form-group">
+          <select class="form-control" name="start-hour">
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+          </select>
+      </div>
+      <div style="margin: 5px !important;">:</div>
+      <div class="w-auto form-group">
+          <select class="form-control" name="start-minutes">
+              <option value="00">00</option>
+              <option value="15">15</option>
+              <option value="30">30</option>
+              <option value="45">45</option>
+          </select>
+      </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Eind uur</label>
