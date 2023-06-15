@@ -78,10 +78,10 @@ if (isset($_GET['weekPrevious'])) {
     }
 }
 
-$host = '127.0.0.1';
-$db   = 'voetbal schoen';
-$user = 'root';
-$password = '';
+$host = "localhost";
+$user = "klas4s21_558821";
+$password = "TtYi1p8C";
+$db = "klas4s21_558821";
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -90,9 +90,10 @@ $con = new PDO($dsn, $user, $password);
 
 $datum = $formattedDays[0];
 
-$sth = $con->prepare('SELECT * FROM tasks WHERE datum >= :datum');
+$sth = $con->prepare('SELECT * FROM tasks LEFT JOIN users_tasks ON tasks.id = users_tasks.task_id WHERE datum >= :datum AND users_tasks.user_id = :user_id AND users_tasks.goedgekeurd = 1');
 
 $sth->bindParam('datum', $datum);
+$sth->bindParam('user_id', $_SESSION['user_id']);
 
 $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);

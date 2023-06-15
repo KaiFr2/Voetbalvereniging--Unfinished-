@@ -1,5 +1,4 @@
 <?php
-session_start();
 include '../Particals/header.php';
 require '../Particals/connection.php';
 
@@ -25,7 +24,7 @@ if (isset($_POST["submit"])) {
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssssssi", $username, $name, $last, $email, $password,$geslacht,$telefoon);
         $result = $stmt->execute();
-        header("Refresh:0.1; url=inlogpage.php", true, 303);
+        header("Refresh:0.1; url=login.php", true, 303);
     }   
 }
 

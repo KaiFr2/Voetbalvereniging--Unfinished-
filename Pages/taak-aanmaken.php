@@ -35,7 +35,7 @@ if (isset($_POST['submit-taken'])) {
     if ($stmt->error) {
         echo "Error: " . $stmt->error;
     } else {
-        echo "Data inserted successfully!";
+        header('Location: taken.php');
     }
     
     // Close the statement

@@ -13,6 +13,13 @@ include '../Particals/header.php';
 </head>
 <body class="bg-dark text-center">
 
+<style>
+        body {
+            background-image: url("../Images/background-site.jpg");
+            background-size: cover;
+        }
+    </style>
+
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
     <div class="container">

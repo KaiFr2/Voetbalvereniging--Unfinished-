@@ -1,6 +1,6 @@
 <?php
-session_start();
-include_once 'Particals/connection.php';
+include '../Particals/header.php';
+include_once '../Particals/connection.php';
 
 
 if (isset($_POST["submit"])) {
@@ -21,6 +21,7 @@ if (isset($_POST["submit"])) {
         if ($wachtwoordgoed) {
             $_SESSION["admin"] = $row["admin"];
             $_SESSION["naam"] = $naam;
+            $_SESSION['user_id'] = $row['id'];
             $_SESSION["session_id"] = session_id();
             header("Refresh:0.1; url=index.php", true, 303);
         }
